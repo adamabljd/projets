@@ -8,6 +8,9 @@
  
  
  
+ 
+ 
+
 2- React meta course: il faut faire "npm install" puis "npm start".
 
   Ce sont des exercices que j'ai fait dans un cours en ligne de react, fait par Meta. 
@@ -22,6 +25,10 @@
                     4- 2 boutons qui joue le son des oiseaux. Le but est d'apprednre a manipuler les assets et les medias.
                     5- Creer un navbar avec Link et Routes.
   
+  
+  
+  
+
   
 3- Composants du ERP pour Upsilon Junior Entreprise: il faut faire "npm install" puis run le storybook.
 
