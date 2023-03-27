@@ -1,6 +1,7 @@
 # projets
 
 1- Projet vue: il faut faire "npm install" puis "npm run serve".
+
  Le but du projet est de faire une application Vue.js d’un jeu pour deviner un mot de 5 lettres, avec les notions appris pendant le cours.
  On a utiliser vue router pour manipler les liens entre les composants. Et vue store pour sauvgareder et manipuler les donnees.
  Et Cypress pour les tests
