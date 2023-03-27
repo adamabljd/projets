@@ -1,0 +1,27 @@
+@use "../utils/application-theme";
+
+.button-component {
+  width: 6.25rem;
+  height: 2.18rem;
+  border: none;
+  border-radius: 0.62rem;
+  color: white;
+  cursor: pointer;
+  font-size: 0.93rem;
+
+  &.primary {
+    background-color: application-theme.$dark-blue;
+  }
+
+  &.secondary {
+    &:hover {
+      background-color: black;
+    }
+    background-color: application-theme.$red;
+  }
+
+  &.tertiary {
+    background: application-theme.$dark-blue;
+    opacity: 0.75;
+  }
+}

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button static rendering should render Button 1`] = `
+<body>
+  <div>
+    <button
+      class="button-component primary"
+      type="button"
+    >
+      Test
+    </button>
+  </div>
+</body>
+`;

@@ -1,0 +1,29 @@
+@use "../utils/application-theme";
+
+.checkbox-component {
+  display: flex;
+  width: 1.2rem;
+  height: 1.2rem;
+  align-content: center;
+  justify-content: center;
+  border: 0.06rem solid application-theme.$dark-blue;
+  appearance: none;
+  border-radius: 0.18rem;
+  cursor: pointer;
+  outline: none;
+
+  &::after {
+    display: none;
+    color: application-theme.$white;
+    content: "\2714";
+    font-size: 0.7rem;
+  }
+
+  &:checked {
+    background-color: application-theme.$dark-blue;
+  }
+
+  &:checked::after {
+    display: block;
+  }
+}

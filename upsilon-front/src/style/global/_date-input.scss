@@ -1,0 +1,120 @@
+@use "application-theme";
+
+.DateInput {
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica, serif;
+
+  &__label {
+    margin-bottom: 0.5rem;
+    color: application-theme.$dark-blue;
+  }
+
+  &__input {
+    padding: 0.5rem;
+    border-radius: 0.625rem;
+    border: 0.063rem solid #797979;
+    font-size: 1rem;
+    width: 15.625rem;
+
+    &:focus {
+      outline: none;
+      border-color: #0077ff;
+    }
+  }
+
+  &__datepicker-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .react-datepicker {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 999;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      font-size: 16px;
+
+      .react-datepicker__header {
+        background-color: #0077ff;
+        color: #fff;
+        border-radius: 4px 4px 0 0;
+
+        .react-datepicker__navigation {
+          top: 14px;
+        }
+      }
+
+      .react-datepicker__day-name,
+      .react-datepicker__day,
+      .react-datepicker__time-name,
+      .react-datepicker__time {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        margin: 4px;
+        border-radius: 50%;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #0077ff;
+          color: #fff;
+        }
+
+        &--disabled {
+          opacity: 0.5;
+          cursor: default;
+        }
+
+        &--selected {
+          background-color: #0077ff;
+          color: #fff;
+        }
+      }
+
+      .react-datepicker__day {
+        &--keyboard-selected {
+          background-color: #0077ff;
+          color: #fff;
+        }
+      }
+
+      .react-datepicker__time-list {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+        .react-datepicker__time-list-item {
+          width: 32px;
+          height: 32px;
+          line-height: 32px;
+          margin: 4px;
+          border-radius: 50%;
+          text-align: center;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #0077ff;
+            color: #fff;
+          }
+
+          &--disabled {
+            opacity: 0.5;
+            cursor: default;
+          }
+
+          &--selected {
+            background-color: #0077ff;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

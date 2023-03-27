@@ -1,0 +1,31 @@
+@use 'application-theme';
+
+.horizontal-row {
+  display: flex;
+  flex-wrap: wrap;
+
+  .horizontal-row-item {
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    margin-right: 5rem;
+    border-radius: 0.25rem;
+    font-family: Helvetica, serif;
+    color: application-theme.$dark-grey;
+
+  }
+
+  button{
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      margin-top: 0.6rem;
+      color: application-theme.$dark-grey;
+      align-items: center;
+      justify-content: center;
+
+    .horizontal-row-icon-pen {
+      margin-right: 3rem;
+    }
+  }
+}
